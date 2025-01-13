@@ -1,0 +1,117 @@
+/* General Container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Main Title */
+.container h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2em;
+  color: #333;
+}
+
+/* Card Grid Layout */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Space between cards */
+  justify-content: center; /* Centers the cards */
+}
+
+/* Individual Card Styling */
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  height: 350px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-9px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Poster Image */
+.card-header img {
+  width: 300px;
+  height: 150px; /* Adjusted height for poster */
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Title Section */
+.card h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0 5px;
+}
+
+.card .subtext {
+  font-size: 0.9em;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* Participants Info */
+.card p {
+  font-size: 0.9em;
+  color: #666;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.card p img {
+  width: auto;
+  height: auto;
+}
+
+/* Apply Button */
+.apply-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  width: 130px;
+  margin-top: 40px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.apply-button:hover {
+  background-color: #0056b3;
+}
+
+.themes {
+  padding: auto;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cards {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .card {
+    width: 100%; /* Take full width on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%; /* Full width for mobile devices */
+  }
+}

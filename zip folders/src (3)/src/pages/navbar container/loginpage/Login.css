@@ -1,0 +1,119 @@
+/* Center the login container */
+.login-container {
+  background: rgb(188, 240, 231);
+  border-radius: 20px; /* Smooth curves at the corners */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto; /* Center horizontally */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center vertically */
+}
+
+/* Labels styling */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 4px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Label hover effect */
+label:hover {
+  color: #007bff; /* Change color on hover */
+  border-color: #007bff; /* Add a hover border effect */
+}
+
+/* Input fields styling */
+input[type="email"],
+input[type="text"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Smooth curves for inputs */
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input focus effect */
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* OTP input container */
+.otp-input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+/* OTP input boxes */
+.otp-input {
+  width: 40px;
+  height: 50px;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* OTP input focus effect */
+.otp-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Buttons styling */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px; /* Smooth curves for buttons */
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Disabled button styling */
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Signup link styling */
+.signup-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.signup-link a {
+  color: #ff1500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Signup link hover effect */
+.signup-link a:hover {
+  color: #ff0000;
+}

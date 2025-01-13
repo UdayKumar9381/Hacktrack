@@ -1,0 +1,33 @@
+.help-container {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+  }
+  
+  .help-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .help-container p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .help-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .help-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
+  }
+  
+  .help-link:hover {
+    text-decoration: underline;
+  }
+  

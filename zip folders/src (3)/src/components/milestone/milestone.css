@@ -1,0 +1,107 @@
+.milestone-section {
+  padding: 20px 40px;
+  background: linear-gradient(135deg, #DEF2F1, #3AAFA9, #17252A);
+  max-width: 1400px;
+  margin: 0 auto;
+  border-radius: 0px;
+  text-align: center;
+}
+
+.milestone-section h2 {
+  margin-bottom: 20px;
+  color: #000000;
+  font-size: 2rem;
+  font-weight: 650;
+}
+
+.milestone-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  
+
+}
+
+.milestone-item {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: rgba(14, 14, 14, 0.1);
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid black; /* Black border */
+  box-shadow: 0px 2px 8px rgba(11, 11, 11, 0.5); /* Black shade for the shadow */
+}
+
+
+.milestone-item h3 {
+  font-size: 2rem;
+  margin: 0;
+  color: #121212;
+}
+
+.milestone-item p {
+  margin: 0;
+  color: #212121;
+}
+
+/* Responsive CSS */
+
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .milestone-section {
+    padding: 15px 30px;
+    max-width: 100%;
+  }
+
+  .milestone-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .milestone-container {
+    gap: 15px;
+    justify-content: space-around; /* Space items evenly on tablet */
+  }
+
+  .milestone-item {
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    box-shadow: 0px 2px 6px rgba(11, 11, 11, 0.4); /* Slightly reduced shadow */
+  }
+
+  .milestone-item h3 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+  .milestone-section {
+    padding: 10px 20px;
+    max-width: 100%;
+  }
+
+  .milestone-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .milestone-container {
+    flex-direction: column; /* Stack items vertically on mobile */
+    gap: 10px;
+  }
+
+  .milestone-item {
+    font-size: 1rem;
+    padding: 8px 1px;
+    box-shadow: 0px 1px 4px rgba(11, 11, 11, 0.3); /* Lighter shadow */
+    width: 100%; /* Full width on mobile */
+  }
+
+  .milestone-item h3 {
+    font-size: 1.5rem;
+  }
+}

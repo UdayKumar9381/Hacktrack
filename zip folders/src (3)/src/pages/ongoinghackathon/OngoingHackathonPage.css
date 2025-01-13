@@ -1,0 +1,125 @@
+.ongoing-hackathon-page {
+  position: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fffefe;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the main heading */
+h1 {
+  text-align: center;
+  color: rgb(8, 8, 8); /* Set heading color to white */
+  background-color: #ffffffa5; /* Optional background for contrast */
+  padding: 10px; /* Add padding for spacing */
+  border-radius: 50px; /* Rounded corners for the background */
+}
+
+h2 {
+  color: #2d98da; /* Retain distinct styling for subheadings */
+}
+
+h3, p, li, strong {
+  color: #333; /* Use a readable text color for content */
+  text-decoration: none; /* Remove any underline effects */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* Styles for buttons */
+button {
+  padding: 10px 20px;
+  background-color: #777f77;
+  color: white;
+  border: none;html, body {
+    height: 100%; /* Ensure the body takes up the full viewport height */
+    margin: 0; /* Remove default margin */
+  }
+  
+  body {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    background-color: #f7f7f7; /* Optional background color */
+  }
+  
+  .ongoing-hackathon-page {
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fffefe;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Ensure the text inside is centered */
+  }
+  
+  /* Styles for the main heading */
+  h1 {
+    text-align: center;
+    color: rgb(8, 8, 8); /* Set heading color */
+    background-color: #ffffffa5; /* Optional background for contrast */
+    padding: 10px; /* Add padding for spacing */
+    border-radius: 50px; /* Rounded corners for the background */
+  }
+  
+  h2 {
+    color: #2d98da; /* Retain distinct styling for subheadings */
+  }
+  
+  h3, p, li, strong {
+    color: #333; /* Use a readable text color for content */
+    text-decoration: none; /* Remove any underline effects */
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+  
+  /* Styles for buttons */
+  button {
+    padding: 10px 20px;
+    background-color: #777f77;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #8d8e8d;
+  }
+  
+  /* Anchor tag styling */
+  a {
+    text-decoration: none; /* Remove underline for links */
+    color: inherit; /* Inherit text color from parent */
+  }
+  
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8d8e8d;
+}
+
+/* Anchor tag styling */
+a {
+  text-decoration: none; /* Remove underline for links */
+  color: inherit; /* Inherit text color from parent */
+}

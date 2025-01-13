@@ -1,0 +1,65 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.sections-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 15px;
+}
+/* Homepage Styles */
+.main {
+    padding: 20px;
+  }
+  
+  /* You can also add specific styles for sections here if needed */
+  
+  /* Responsive Styles */
+
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Reduce sidebar width on tablet screens */
+  .sidebar {
+    width: 200px;
+  }
+
+  /* Adjust padding for main content */
+  .sections-container, .main {
+    padding: 15px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+  /* Stack sidebar below main content on mobile */
+  .main-content {
+    flex-direction: column;
+  }
+
+  /* Full width for sidebar and main content on mobile */
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Adds space between sidebar and content */
+  }
+
+  .sections-container {
+    padding: 10px;
+  }
+
+  .main {
+    padding: 10px;
+  }
+}

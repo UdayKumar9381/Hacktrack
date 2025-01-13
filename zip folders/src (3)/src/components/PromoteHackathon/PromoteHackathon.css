@@ -1,0 +1,123 @@
+/* Base Styles */
+.promote-hackathon-section {
+  padding: 40px;
+  background: linear-gradient(135deg, #DEF2F1, #3AAFA9, #17252A); /* Updated background */
+  max-width: 1469px;
+  margin: 0 auto;
+  border-radius: 0px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+  box-sizing: border-box;
+}
+
+.promote-hackathon-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #17252A; /* Label color */
+  font-size: 2rem;
+  font-weight: 650;
+  text-shadow: 1px 1px 3px #17252A; /* Label shadow */
+}
+
+.promote-container {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  gap: 10px;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+
+  /* Hide scrollbar */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
+
+.promote-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+.promote-item {
+  background-color: #FEFFFF; /* Item background */
+  border: 10px solid #DEF2F1; /* Border color */
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  min-width: 300px;
+  margin: 0 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promote-item:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4);
+}
+
+.promote-item h3 {
+  color: #17252A; /* Text color for heading */
+  font-size: 1.5rem;
+}
+
+.promote-item p {
+  color: #555; /* Optional text color */
+  margin-bottom: 15px;
+}
+
+.promote-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #17252A; /* Button background */
+  color: #FEFFFF; /* Button text color */
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.promote-link:hover {
+  background-color: #17252A; /* Keep same color for consistency */
+}
+
+.control-btn:hover {
+  background-color: #0b0b0b;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .promote-hackathon-section {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .promote-container {
+    display: block;
+    padding: 50;
+  }
+
+  .promote-item {
+    min-width: 50%; /* Full width for each item */
+    margin: 15px 0;
+  }
+
+  .promote-hackathon-section h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .promote-hackathon-section {
+    padding: 30px; /* Adjust padding for better spacing on tablets */
+    max-width: 97vw;
+    box-sizing: border-box; /* Ensure padding doesn’t add extra width */
+  }
+
+  .promote-container {
+    gap: 15px; /* Slightly increase gap for better spacing */
+  }
+
+  .promote-item {
+    min-width: 259px;
+    margin: 0 15px; /* Increase margin for better spacing on tablets */
+  }
+}
