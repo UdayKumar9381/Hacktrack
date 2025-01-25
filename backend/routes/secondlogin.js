@@ -11,8 +11,8 @@ const router = express.Router();
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'udayreddi412@gmail.com',
-        pass: 'eykb esev xhsy mnuh', // Use App Passwords if 2FA is enabled
+        user: 'hacktrack.khub09@gmail.com',
+        pass: 'kpje ermf hqnd ayak', // Use App Passwords if 2FA is enabled
     },
 });
 
