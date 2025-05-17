@@ -6,3 +6,4 @@ const secret = crypto.randomBytes(64).toString('hex');
 
 // Log the secret to the console
 console.log(secret);
+
