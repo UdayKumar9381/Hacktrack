@@ -13,3 +13,4 @@ backend/.env
 
 # Build files (optional)
 frontend/build/
+backend/dist/
