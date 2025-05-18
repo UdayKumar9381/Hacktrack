@@ -1,0 +1,125 @@
+.certificate-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Equal-width columns */
+  .certificate-form,
+  .certificate-list,
+  .certificate-preview-container {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Headings */
+  .certificate-form h2,
+  .certificate-list h2,
+  .certificate-preview-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 8px;
+  }
+  
+  /* Form Inputs */
+  .certificate-form input,
+  .certificate-form textarea,
+  .certificate-form select {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+  }
+  
+  .certificate-form button {
+    width: 100%;
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .certificate-form button:hover {
+    background-color: #3a7bc8;
+  }
+  
+  /* Certificate List */
+  .certificate-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .certificate-list li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-left: 4px solid #4a90e2;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .certificate-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .preview-btn {
+    background-color: #4a90e2;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+  
+  .preview-btn:hover {
+    background-color: #3a7bc8;
+  }
+  
+  /* Certificate Preview */
+  .preview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .print-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .print-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 1024px) {
+    .certificate-container {
+      flex-direction: column;
+    }
+  }
+  

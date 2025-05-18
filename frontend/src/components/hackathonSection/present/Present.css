@@ -1,0 +1,93 @@
+/* General Container Styling */
+.hackathon-container {
+  width: 90%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-heading {
+  font-size: 2rem;
+  color: #333;
+}
+
+.hackathon-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Card Styling */
+.hackathon-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+
+  /* Animation */
+  animation: slideInFromRight 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.hackathon-card:hover {
+  transform: scale(1.02);
+}
+
+/* Poster Section */
+.hackathon-poster {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Content Section */
+.hackathon-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.hackathon-title {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.hackathon-participants {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.apply-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.apply-button:hover {
+  background-color: #0056b3;
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+  background-color: #1E2A5E;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin: 0;
+  border: none;
+  line-height: 60px;
+  overflow: visible;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.left-side {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 100%;
+}
+
+/* Updated menu items as buttons */
+.menu-item {
+  position: relative;
+  cursor: pointer;
+  padding: 6px 12px;
+  color: white;
+  height: auto;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  font-size: 12px;
+  font-family: inherit;
+}
+
+/* Specific styles for Hackathons and Resources buttons */
+.hackathons-btn, .resources-btn {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.hackathons-btn:hover, .resources-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Dropdown Menu */
+.dropdown-container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #7C93C3;
+  border-radius: 4px;
+  min-width: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: block;
+  z-index: 1001;
+  /* Add this to prevent gap between button and menu */
+  margin-top: 0;
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  text-align: left;
+}
+
+.dropdown-container:hover .dropdown-menu {
+  display: block;
+}
+
+/* Host and Login buttons */
+.host-btn, .login-btn {
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.host-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+.host-btn:hover {
+  background-color: #45a049;
+}
+
+.login-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+}
+
+.login-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Mobile Menu */
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger, 
+.hamburger::before, 
+.hamburger::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: white !important;
+  margin: 6px 0;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hamburger.open {
+  background-color: transparent;
+}
+
+.hamburger.open::before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open::after {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #1E2A5E;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.mobile-menu-item {
+  color: white;
+  font-size: 18px;
+  padding: 15px 20px;
+  border-bottom: 1px solid black;
+  transition: background-color 0.3s ease;
+}
+
+.mobile-dropdown {
+  background-color: #7C93C3;
+  padding-left: 15px;
+}
+
+.mobile-menu-item:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .header-right {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mobile-menu {
+    display: none;
+  }
+}

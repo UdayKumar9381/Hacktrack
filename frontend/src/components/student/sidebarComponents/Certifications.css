@@ -1,0 +1,81 @@
+/* Certifications.css */
+
+/* Background Animation */
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.dashboard-container {
+  background: rgb(151, 149, 149);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Header Style */
+.dashboard-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+/* Table Style */
+.dashboard-table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-table th, .dashboard-table td {
+  padding: 12px 15px;
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Hover Effects on Table Rows */
+.dashboard-table tr:hover {
+  background-color: #f2f2f2;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-table th {
+  background-color: #8587ee;
+  color: rgb(0, 0, 0);
+}
+
+/* Button Styling */
+.dashboard-btn {
+  background-color: #a0e079;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect on Button */
+.dashboard-btn:hover {
+  background-color: #df96af;
+  transform: scale(1.05);
+}
+

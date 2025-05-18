@@ -1,0 +1,122 @@
+/* Main container styles */
+.container {
+    min-height: 100vh;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 60rem;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    overflow: hidden;
+    transform: scale(0.95);
+    transition: transform 0.3s ease-in-out;
+}
+
+.form-wrapper:hover {
+    transform: scale(1);
+}
+
+/* Left side animation and styling */
+.illustration-container {
+    width: 40%;
+    background: url('https://i.pinimg.com/736x/75/c6/a6/75c6a68a97637356f3cb52aac86d37e0.jpg') no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Form container styles */
+.form-container {
+    width: 60%;
+    padding: 2.5rem;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.form-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2d3748;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* Input animations */
+.input-field, .textarea-field {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 2px solid #cbd5e0;
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-field:focus, .textarea-field:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+}
+
+.textarea-field {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Submit button animation */
+.submit-button {
+    width: 100%;
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1.125rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.submit-button:hover {
+    background-color: #2563eb;
+    transform: scale(1.05);
+}
+
+.submit-button:disabled {
+    background-color: #60a5fa;
+    cursor: not-allowed;
+}
+
+/* Icon styles */
+.icon {
+    width: 1rem;
+    height: 1rem;
+}

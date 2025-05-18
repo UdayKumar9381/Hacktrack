@@ -1,0 +1,86 @@
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+  background: #6a5acd;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 100;
+  /* Add these to ensure full coverage */
+  margin: 0;
+  border: none;
+  line-height: 60px; /* Match height */
+}
+
+/* Remove any default margins that might be causing gaps */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.profile-wrapper {
+  position: relative;
+  height: 60px; /* Explicit height */
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.profile-icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Changed from 5px */
+  height: 100%;
+}
+
+.profile-icon img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  vertical-align: middle; /* Ensures proper alignment */
+}
+
+/* Rest of your CSS remains the same */
+.dropdown-menu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-80%);
+  top: calc(100% + 10px);
+  background: #1b1b3a;
+  border-radius: 9px;
+  width: 150px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+  overflow: visible;
+}
+
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.dropdown-menu li:hover {
+  background: #25255a;
+}
+
+/* Ensure nothing is clipping the dropdown */
+.dashboard-header {
+  overflow: visible;
+}

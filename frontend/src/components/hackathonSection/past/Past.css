@@ -1,0 +1,134 @@
+/* Main container styles */
+.past-page {
+  min-height: 100vh;
+  padding: 20px 0;
+  background: #f5f7fa;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+.main-heading {
+  text-align: center;
+  margin: 20px 0 30px;
+  font-size: 2.2em;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* Carousel container */
+.hackathon-cards-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 0 50px; /* Space for buttons */
+}
+
+/* Horizontal cards layout */
+.hackathon-cards {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 20px;
+  padding: 15px 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.hackathon-cards::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome/Safari */
+}
+
+/* Individual card styling */
+.hackathon-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: 300px;
+  flex: 0 0 auto;
+  animation: slideInFromRight 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+/* Fixed navigation buttons */
+.carousel-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.carousel-button {
+  pointer-events: auto;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 1.2rem;
+}
+
+.carousel-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-button:active {
+  transform: scale(0.95);
+}
+
+.carousel-button:disabled {
+  background: #cccccc;
+  transform: none;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+/* Animation */
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hackathon-card {
+    min-width: 250px;
+  }
+  
+  .carousel-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  
+  .hackathon-cards-container {
+    padding: 0 40px;
+  }
+}

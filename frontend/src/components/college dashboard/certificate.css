@@ -1,0 +1,96 @@
+/* ===== Certificate List Styling ===== */
+.certificate-list-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.no-certificates {
+  font-size: 18px;
+  color: #888;
+}
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.certificate-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+}
+
+.certificate-card h3 {
+  margin: 10px 0;
+  font-size: 1.4em;
+}
+
+.certificate-card p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.certificate-card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  background: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.certificate-card a:hover {
+  background: #0056b3;
+}
+
+/* ===== Certificate Form Styling ===== */
+.certificate-form-container {
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.certificate-form-container h2 {
+  margin-bottom: 15px;
+}
+
+.certificate-form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.certificate-form-container button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+  background: #28a745;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.certificate-form-container button:hover {
+  background: #218838;
+}

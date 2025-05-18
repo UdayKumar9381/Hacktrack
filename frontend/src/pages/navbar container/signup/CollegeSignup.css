@@ -1,0 +1,92 @@
+/* CollegeSignup.css */
+.college-signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.college-signup-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.college-signup-container form {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+}
+
+.college-signup-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.college-signup-container input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.college-signup-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.college-signup-container button:hover {
+  background-color: #0056b3;
+}
+
+.login-text {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.login-link {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .college-signup-container form {
+    padding: 1.5rem;
+    width: 75%;
+  }
+
+  .college-signup-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .college-signup-container input {
+    padding: 8px;
+  }
+
+  .college-signup-container button {
+    padding: 10px;
+  }
+}

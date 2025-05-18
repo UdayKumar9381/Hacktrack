@@ -1,0 +1,37 @@
+.team-members-container {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .dashboard-title {
+    color: #6a5acd;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-message {
+    background: #f0f8ff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .hackathon-info, .motivational-quote, .call-to-action {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .motivational-quote blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 3px solid #6a5acd;
+    padding-left: 15px;
+  }
+  
+  .call-to-action {
+    background: #e6f7ff;
+    border-left: 3px solid #1890ff;
+  }

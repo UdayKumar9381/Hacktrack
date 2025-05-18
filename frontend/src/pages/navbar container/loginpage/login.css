@@ -1,0 +1,135 @@
+/* General page styling */
+.login-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  overflow: hidden;
+  position: relative;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Bubble styling (static) */
+.bubble {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+/* Responsive Bubble Positions */
+.bubble1 { top: 20%; left: 10%; }
+.bubble2 { top: 40%; left: 20%; }
+.bubble3 { top: 60%; left: 5%; }
+.bubble4 { top: 30%; left: 70%; }
+.bubble5 { top: 50%; left: 85%; }
+.bubble6 { top: 70%; left: 55%; }
+.bubble7 { top: 80%; left: 15%; }
+.bubble8 { top: 10%; left: 50%; }
+.bubble9 { top: 25%; left: 60%; }
+.bubble10 { top: 45%; left: 30%; }
+
+/* Centering label and buttons container */
+.login-options-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  padding: 40px 30px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.login-options-container h2 {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Buttons styling */
+.login-option-btn {
+  margin: 10px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 280px;
+  color: #fff;
+  background: linear-gradient(145deg, #32a5f7, #1186e5);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2), 0 -4px 6px rgba(255, 255, 255, 0.1) inset;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover and 3D effect */
+.login-option-btn:hover {
+  transform: scale(0.95) translateY(3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 -3px 5px rgba(255, 255, 255, 0.1) inset;
+}
+
+.login-option-btn:active {
+  transform: scale(0.9);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), 0 -2px 3px rgba(255, 255, 255, 0.1) inset;
+}
+
+/* ✅ Mobile (Up to 480px) */
+@media (max-width: 480px) {
+  .login-options-container {
+      width: 95%;
+      padding: 30px 20px;
+  }
+
+  .login-options-container h2 {
+      font-size: 1.5rem;
+  }
+
+  .login-option-btn {
+      font-size: 0.9rem;
+      padding: 10px 12px;
+  }
+
+  /* Adjust bubble sizes for smaller screens */
+  .bubble {
+      width: 30px;
+      height: 30px;
+  }
+}
+
+/* ✅ Tablet (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .login-options-container {
+      width: 80%;
+  }
+
+  .login-options-container h2 {
+      font-size: 1.7rem;
+  }
+
+  .login-option-btn {
+      font-size: 1rem;
+      max-width: 250px;
+  }
+}
+
+/* ✅ Small Laptops (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .login-options-container {
+      width: 70%;
+  }
+
+  .login-option-btn {
+      max-width: 270px;
+  }
+}
+
+/* ✅ Large Screens (Above 1025px) */
+@media (min-width: 1025px) {
+  .login-options-container {
+      width: 400px;
+  }
+}

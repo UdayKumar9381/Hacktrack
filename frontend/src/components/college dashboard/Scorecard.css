@@ -1,0 +1,87 @@
+.student-details {
+  padding: 20px;
+}
+
+.student-details h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.student-details form {
+  margin-bottom: 20px;
+}
+
+.student-details label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.student-details input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.student-details button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.student-count {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #333;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.student-details button:hover {
+  background-color: #218838;
+}
+
+.student-details table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-details th, .student-details td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.student-details th {
+  background-color: #f4f4f4;
+}
+
+.student-details td button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.student-details td button:hover {
+  background-color: #0056b3;
+}
+
+.student-details td button:last-child {
+  background-color: #dc3545;
+}
+
+.student-details td button:last-child:hover {
+  background-color: #c82333;
+}

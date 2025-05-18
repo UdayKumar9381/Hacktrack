@@ -1,0 +1,124 @@
+/* Host Page Styles */
+.host-wrapper {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.host-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.roadmap-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.roadmap-svg {
+  width: 100%;
+  max-width: 800px;
+}
+
+.roadmap-path {
+  stroke: black;
+  stroke-width: 30;
+  fill: none;
+  stroke-linecap: round;
+}
+
+.roadmap-dashed {
+  stroke: white;
+  stroke-width: 5;
+  fill: none;
+  stroke-dasharray: 15,15;
+  stroke-linecap: round;
+}
+
+.roadmap-point {
+  fill: red;
+}
+
+.roadmap-label {
+  font-size: 14px;
+  fill: black;
+  text-anchor: middle;
+}
+
+.hosting-section {
+  margin-top: 30px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.hosting-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.hosting-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.hosting-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hosting-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .host-heading {
+      font-size: 20px;
+  }
+  .roadmap-label {
+      font-size: 12px;
+  }
+  .hosting-section {
+      padding: 15px;
+  }
+  .hosting-title {
+      font-size: 18px;
+  }
+  .hosting-description {
+      font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .host-heading {
+      font-size: 18px;
+  }
+  .roadmap-label {
+      font-size: 10px;
+  }
+  .hosting-section {
+      padding: 10px;
+  }
+  .hosting-title {
+      font-size: 16px;
+  }
+  .hosting-description {
+      font-size: 12px;
+  }
+}
