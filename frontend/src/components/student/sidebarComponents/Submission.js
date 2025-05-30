@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Send, AlertCircle } from "lucide-react";
 import axios from "axios";
 
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || "http://localhost:5002/api/hackathon";
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || "https://hacktrack-rggs.onrender.com/api/hackathon";
 
 const HackathonSubmissionForm = () => {
   const [formData, setFormData] = useState({

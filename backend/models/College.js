@@ -4,7 +4,7 @@ const collegeSchema = new mongoose.Schema({
   collegeName: { type: String, required: true },
   collegeEmail: { type: String, required: true, unique: true },
   phoneNumber: { type: String, required: true },
-  collegeCode: { type: String, required: true, unique: true }, // Unique College Code
+  collegeCode: { type: String, required: true, unique: true }, // Unique College Code 
   password: { type: String, required: true },
 });
 

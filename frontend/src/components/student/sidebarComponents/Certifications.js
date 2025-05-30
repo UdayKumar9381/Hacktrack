@@ -8,7 +8,7 @@ const StudentDashboardCertificate = () => {
     useEffect(() => {
         const fetchCertificates = async () => {
             try {
-                const response = await fetch(`http://localhost:5002/api/files/${studentId}`);
+                const response = await fetch(`https://hacktrack-rggs.onrender.com/api/files/${studentId}`);
                 const data = await response.json();
                 if (response.ok) {
                     setCertificates(data);
@@ -49,7 +49,7 @@ const StudentDashboardCertificate = () => {
                             <td>{(certificate.fileSize / 1024).toFixed(2)} KB</td>
                             <td>{new Date(certificate.uploadDate).toLocaleDateString()}</td>
                             <td>
-                                <a href={`http://localhost:5002/api/download/${certificate.filename}`} download>
+                                <a href={`https://hacktrack-rggs.onrender.com/api/download/${certificate.filename}`} download>
                                     Download
                                 </a>
                             </td>

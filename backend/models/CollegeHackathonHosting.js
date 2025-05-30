@@ -4,7 +4,7 @@ const CollegeHackathonHostingSchema = new mongoose.Schema({
     name: { type: String, required: true },
     description: { type: String, required: true },
     image: { type: String },  // URL for uploaded image
-    startDate: { type: Date, required: true }, // Stores both date & time
+    startDate: { type: Date, required: true }, // Stores both date & time 
     endDate: { type: Date, required: true },   // Stores both date & time
     location: { type: String, required: true },
     collegeName: { type: String, required: true },

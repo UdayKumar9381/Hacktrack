@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const User = require('../models/User'); // Adjust paths as needed
+const User = require('../models/User'); // Adjust paths as needed 
 const Submission = require('../models/Submission');
 const Registration = require('../models/registration');
 

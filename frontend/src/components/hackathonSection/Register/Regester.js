@@ -84,7 +84,7 @@
 //         <option value="">Select Year</option>
 //         <option value="Btech 1st year">Btech 1st year</option>
 //         <option value="Btech 2nd year">Btech 2nd year</option>
-//         <option value="Btech 3rd year">Btech 3rd year</option>
+//         <option value="Btech 3rd year">Bte ch 3rd year</option>
 //         <option value="Btech 4th year">Btech 4th year</option>
 //       </select>
 //       <br /><br />

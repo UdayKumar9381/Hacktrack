@@ -3,7 +3,7 @@ import axios from 'axios';
 import HackathonCard from '../../hackathonSection/HackathonCard'; 
 import './Present.css';
 
-const API_URL = 'http://localhost:5002/hackathon';
+const API_URL = 'https://hacktrack-rggs.onrender.com/hackathon';
 
 function Present() {
   const [hackathons, setHackathons] = useState([]);
@@ -31,7 +31,7 @@ function Present() {
               key={hackathon._id}
               title={hackathon.name}
               description={hackathon.description}
-              image={hackathon.image ? `http://localhost:5002/${hackathon.image}` : '/default-placeholder.png'}
+              image={hackathon.image ? `https://hacktrack-rggs.onrender.com/${hackathon.image}` : '/default-placeholder.png'}
               startDate={hackathon.startDate}
               endDate={hackathon.endDate}
               location={hackathon.location}

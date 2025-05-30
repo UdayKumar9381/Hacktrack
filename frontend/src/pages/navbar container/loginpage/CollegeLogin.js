@@ -23,7 +23,7 @@ const CollegeLogin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5002/api/college/login', formData);
+      const response = await axios.post('https://hacktrack-rggs.onrender.com/api/college/login', formData);
       alert(response.data.message);
       localStorage.setItem('token', response.data.token); // Save token to localStorage
       navigate('/collegedashboard'); // Navigate to dashboard after successful login

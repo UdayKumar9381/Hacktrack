@@ -9,7 +9,7 @@ const Studenthome = () => {
         <div className="welcome-message">
           <p>Hello, Innovator! 🚀</p>
           <p>
-            Welcome to your hackathon hub. Here, you can explore upcoming
+            Welcome to your hackathon hub. Here, you can explore upcoming 
             hackathons, track your progress, and showcase your skills to the
             world.
           </p>

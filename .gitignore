@@ -6,7 +6,7 @@ backend/node_modules/
 # Logs
 *.log
 
-# dotenv files
+# dotenv files 
 .env
 frontend/.env
 backend/.env

@@ -2,7 +2,7 @@ const express = require("express");
 const Certificate = require("../models/Certificate");
 const router = express.Router();
 
-// ✅ Create Certificate
+// ✅ Create Certificate 
 router.post("/create", async (req, res) => {
   try {
     const { studentId, studentName, course, hackathonName, template } = req.body; // Add `template` here

@@ -1,7 +1,7 @@
 const cron = require('node-cron');
 const CollegeHackathonHosting = require('../models/CollegeHackathonHosting');
 
-// Function to update hackathon statuses
+// Function to update hackathon statuses 
 const updateHackathonStatuses = async () => {
     try {
         const now = new Date();

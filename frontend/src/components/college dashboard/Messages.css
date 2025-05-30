@@ -13,7 +13,7 @@
   transform: translate(-50%, -50%); /* Adjust to truly center the container */
 }
 
-/* Table Styling */
+/* Table Styling */ 
 .messages-table {
   width: 100%;
   border-collapse: collapse;

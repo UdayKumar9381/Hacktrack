@@ -31,7 +31,7 @@ const Sidebar = () => {
         <li>
           <NavLink to="/studentdashboard/Leaderboard">
             <FaTrophy className="sidebar-icon" /> Scoreboard
-          </NavLink>
+          </NavLink> 
         </li>
         <li>
           <NavLink to="/studentdashboard/HackathonRegister">

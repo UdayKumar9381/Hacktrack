@@ -15,7 +15,7 @@ const ViewSubmissions = ({ setSubmissionsCount }) => {
   useEffect(() => {
     const fetchSubmissions = async () => {
       try {
-        const response = await axios.get("http://localhost:5002/api/hackathon/submissions");
+        const response = await axios.get("https://hacktrack-rggs.onrender.com/api/hackathon/submissions");
         setSubmissions(response.data.data);
         setFilteredSubmissions(response.data.data);
         setSubmissionCount(response.data.data.length);
@@ -116,7 +116,7 @@ const ViewSubmissions = ({ setSubmissionsCount }) => {
                   {submission.document ? (
                     <>
                       <a
-                        href={`http://localhost:5002/uploads/${submission.document}`}
+                        href={`https://hacktrack-rggs.onrender.com/uploads/${submission.document}`}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -124,7 +124,7 @@ const ViewSubmissions = ({ setSubmissionsCount }) => {
                       </a>
                       <br />
                       <a
-                        href={`http://localhost:5002/uploads/${submission.document}`}
+                        href={`https://hacktrack-rggs.onrender.com/uploads/${submission.document}`}
                         download={submission.document} // Ensures correct download behavior
                       >
                         Download Document

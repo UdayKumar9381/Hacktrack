@@ -17,7 +17,7 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   animation: fadeInUp 1.9s ease-out;
   transition: all 0.3s ease;
-}
+} 
 
 .welcome-box:hover {
   transform: translateY(-5px);

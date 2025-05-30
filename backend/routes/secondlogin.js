@@ -5,7 +5,7 @@ const nodemailer = require('nodemailer');
 const crypto = require('crypto');
 const multer = require("multer");
 const path = require("path");
-const User = require('../models/User'); // Adjust the path to your User model
+const User = require('../models/User'); // Adjust the path to your User model 
 
 const router = express.Router();
 

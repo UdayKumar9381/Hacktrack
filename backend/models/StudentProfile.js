@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const StudentProfileSchema = new mongoose.Schema({
-    profilePicture: { type: String, default: "" }, // Store URL of the image
+    profilePicture: { type: String, default: "" }, // Store URL of the image 
     name: { type: String, required: true },
     studentId: { type: String, required: true, unique: true },
     email: { type: String, required: true, unique: true },

@@ -3,7 +3,7 @@ const Registration = require('../models/registration');
 
 const router = express.Router();
 
-// Fetch hackathon participation details by email
+// Fetch hackathon participation details by email 
 router.get('/participation/:email', async (req, res) => {
     try {
         const { email } = req.params;

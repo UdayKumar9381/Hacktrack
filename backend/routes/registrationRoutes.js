@@ -1,6 +1,6 @@
 const express = require('express');
 const Registration = require('../models/registration');
-const sendEmail = require('../utils/emailService'); // Import the email service
+const sendEmail = require('../utils/emailService'); // Import the email service 
 
 const router = express.Router();
 

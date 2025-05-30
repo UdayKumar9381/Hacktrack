@@ -31,7 +31,7 @@ const Profile = () => {
 
     const fetchProfile = async () => {
         try {
-            const response = await fetch(`http://localhost:5002/api/auth/user/${userEmail}`);
+            const response = await fetch(`https://hacktrack-rggs.onrender.com/api/auth/user/${userEmail}`);
             if (!response.ok) {
                 throw new Error('Failed to fetch profile');
             }
@@ -94,7 +94,7 @@ const Profile = () => {
     
                 console.log("Uploading image...");
     
-                const uploadResponse = await fetch("http://localhost:5002/api/auth/upload-profile-picture", {
+                const uploadResponse = await fetch("https://hacktrack-rggs.onrender.com/api/auth/upload-profile-picture", {
                     method: "POST",
                     body: formData,
                 });
@@ -113,7 +113,7 @@ const Profile = () => {
             }
     
             console.log("Updating profile...");
-            const response = await fetch(`http://localhost:5002/api/auth/update-profile`, {
+            const response = await fetch(`https://hacktrack-rggs.onrender.com/api/auth/update-profile`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

@@ -6,7 +6,7 @@ const StudentList = () => {
     const [selectedFiles, setSelectedFiles] = useState({});
 
     useEffect(() => {
-        fetch("http://localhost:5002/api/auth/users")
+        fetch("https://hacktrack-rggs.onrender.com/api/auth/users")
             .then((res) => {
                 if (!res.ok) throw new Error(`HTTP error! Status: ${res.status}`);
                 return res.json();
@@ -35,7 +35,7 @@ const StudentList = () => {
         formData.append("userId", userId);
 
         try {
-            const response = await fetch("http://localhost:5002/api/upload", {
+            const response = await fetch("https://hacktrack-rggs.onrender.com/api/upload", {
                 method: "POST",
                 body: formData,
             });

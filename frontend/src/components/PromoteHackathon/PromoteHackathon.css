@@ -16,7 +16,7 @@
   color: #17252A; /* Label color */
   font-size: 2rem;
   font-weight: 650;
-  text-shadow: 1px 1px 3px #17252A; /* Label shadow */
+  text-shadow: 1px 1px 3px #17252A; /* Label sh adow */
 }  
 
 @keyframes scroll {

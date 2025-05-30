@@ -82,7 +82,7 @@ function OrganizersSection() {
           ))}
       </div>
 
-      {/* Show more / show less button */}
+      {/* Show more / show less  button */}
       <button className="show-more" onClick={toggleShowMore}>
         {showMore ? 'Show Less' : 'Show More'}
       </button>

@@ -3,7 +3,7 @@ const College = require('../models/College');
 
 const auth = async (req, res, next) => {
     try {
-        // Extract token from Authorization header
+        // Extract token from Authorization header 
         const token = req.header('Authorization')?.replace('Bearer ', '');
         console.log('Token received:', token); // Debugging line
 

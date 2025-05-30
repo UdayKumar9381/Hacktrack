@@ -6,7 +6,7 @@ const Messages = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:5002/api/contact/messages") // Replace with your actual API endpoint
+    fetch("https://hacktrack-rggs.onrender.com/api/contact/messages") // Replace with your actual API endpoint
       .then((response) => response.json())
       .then((data) => {
         setMessages(data);

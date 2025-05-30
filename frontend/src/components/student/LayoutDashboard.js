@@ -14,7 +14,7 @@ const LayoutDashboard = () => {
         <Sidebar />
         <div className="dashboard-content">
           <Outlet />
-        </div>
+        </div> 
       </div>
     </div>
   );

@@ -21,7 +21,7 @@ function Signup() {
         }
 
         try {
-            const response = await fetch('http://localhost:5002/api/auth/signup', {
+            const response = await fetch('https://hacktrack-rggs.onrender.com/api/auth/signup', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ fullName, email, phone, collegeName, collegeCode, studentId, branch, dob, linkedin }),

@@ -28,4 +28,4 @@ const HackathonGuidesPage = () => {
   );
 };
 
-export default HackathonGuidesPage;
+export default HackathonGuidesPage; 

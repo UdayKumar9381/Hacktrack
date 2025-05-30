@@ -2,7 +2,7 @@ module.exports = (err, req, res, next) => {
   // Log the full error stack to the server for debugging
   console.error(err.stack);
 
-  // Handle specific error types (e.g., validation errors, database errors)
+  // Handle specific error types (e.g., validation errors, database errors) 
   if (err.name === 'ValidationError') {
     return res.status(400).json({
       error: {

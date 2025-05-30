@@ -11,7 +11,7 @@ const submissionSchema = new mongoose.Schema({
     type: String,
     required: [true, "Name is required"],
     trim: true,
-    maxLength: [50, "Name cannot exceed 50 characters"],
+    maxLength: [50, "Name cannot exceed 50 characters"], 
   },
   email: {
     type: String,

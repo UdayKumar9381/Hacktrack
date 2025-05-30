@@ -16,7 +16,7 @@ function HackathonSection() {
             <img src="https://cdn.dribbble.com/users/30388/screenshots/2922677/uptocode-animation-loop-dribbble.gif" alt="Present Hackathon" />
             <button onClick={() => navigate('/present')}>Explore</button>
           </div>
-          <div className="description">
+          <div className="description"> 
             <p>
               Join our ongoing hackathon and showcase your skills to win amazing prizes. Collaborate with peers to create innovative solutions and get real-time feedback from mentors and judges. 
             </p>

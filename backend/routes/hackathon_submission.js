@@ -4,7 +4,7 @@ const path = require("path");
 const router = express.Router();
 const Submission = require("../models/Submission");
 
-// Configure Multer for file uploads
+// Configure Multer for file uploads 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, "uploads/"); // Save files in the `uploads` folder

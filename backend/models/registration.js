@@ -16,7 +16,7 @@ const RegistrationSchema = new mongoose.Schema({
   },
   hackathonName: { type: String, required: true },
   collegeName: { type: String, required: true },
-  organisation: { type: String, required: true }, // Ensure this field is included
+  organisation: { type: String, required: true }, // Ensure this fie ld is included
   Date: { type: Date, default: Date.now },
 });
 

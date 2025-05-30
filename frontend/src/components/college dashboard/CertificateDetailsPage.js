@@ -13,7 +13,7 @@ const CertificateDetailsPage = () => {
 
   const fetchCertificates = async () => {
     try {
-      const response = await axios.get("http://localhost:5002/api/certificates");
+      const response = await axios.get("https://hacktrack-rggs.onrender.com/api/certificates");
       setCertificates(response.data);
     } catch (error) {
       console.error("Error fetching certificates:", error);

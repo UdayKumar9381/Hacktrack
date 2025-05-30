@@ -3,7 +3,7 @@ const router = express.Router();
 const Scorecard = require('../models/scorecard'); // Adjust path as needed
 const Registration = require('../models/registration'); // Adjust path as needed
 const mongoose = require('mongoose');
-const auth = require('../middleware/auth');  // Assuming you have auth middleware
+const auth = require('../middleware/auth');  // Assuming you have auth middleware 
 
 // Get all scores
 router.get('/scores', async (req, res) => {

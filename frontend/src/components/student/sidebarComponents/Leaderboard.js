@@ -20,7 +20,7 @@ const Scoreboard = () => {
   
           // Fetch score data from the backend
           const response = await fetch(
-            `http://localhost:5002/api/registration/student-score?${email ? `email=${email}` : `studentId=${studentId}`}`
+            `https://hacktrack-rggs.onrender.com/api/registration/student-score?${email ? `email=${email}` : `studentId=${studentId}`}`
           );
   
           if (!response.ok) {

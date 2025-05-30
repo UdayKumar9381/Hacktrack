@@ -27,7 +27,7 @@ const CollegeSignup = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5002/api/college/signup', formData);
+      const response = await axios.post('https://hacktrack-rggs.onrender.com/api/college/signup', formData);
       alert(response.data.message);
       navigate('/login'); // Redirect to login page after successful signup
     } catch (error) {

@@ -194,4 +194,4 @@ const CertificateSample = ({
   );
 };
 
-export default CertificateSample;
+export default CertificateSample; 

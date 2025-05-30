@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './hosting.css';
 
-const API_URL = 'http://localhost:5002/hackathon';
+const API_URL = 'https://hacktrack-rggs.onrender.com/hackathon';
 
 function Hosting() {
   const [hackathons, setHackathons] = useState({
@@ -132,7 +132,7 @@ function Hosting() {
     });
 
     if (hackathon.image) {
-      setPreviewImage(`http://localhost:5002/${hackathon.image}`);
+      setPreviewImage(`https://hacktrack-rggs.onrender.com/${hackathon.image}`);
     }
   };
 
@@ -291,7 +291,7 @@ const HackathonList = ({ hackathons, activeTab, setActiveTab, handleEdit, handle
                 key={hackathon._id}
                 title={hackathon.name}
                 description={hackathon.description}
-                image={hackathon.image ? `http://localhost:5002/${hackathon.image}` : '/default-placeholder.png'}
+                image={hackathon.image ? `https://hacktrack-rggs.onrender.com/${hackathon.image}` : '/default-placeholder.png'}
                 startDate={hackathon.startDate}
                 endDate={hackathon.endDate}
                 location={hackathon.location}

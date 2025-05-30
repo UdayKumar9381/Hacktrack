@@ -29,7 +29,7 @@ const HackathonRegister = () => {
     }
 
     try {
-      const response = await Axios.post("http://localhost:5002/api/registration/register", formData);
+      const response = await Axios.post("https://hacktrack-rggs.onrender.com/api/registration/register", formData);
       setRegistrationSuccess(true); // Set success state to true
       console.log(response);
       setFormData({

@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-/* Mobile - max-width 767px */
+/* Mobile - max-width 767px */ 
 @media (max-width: 767px) {
   /* Add mobile-specific styles here */
 }

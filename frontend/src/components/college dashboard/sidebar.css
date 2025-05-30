@@ -9,7 +9,7 @@
   transition: all 0.3s ease;
   position: sticky; /* Make the sidebar sticky */
   top: 0; /* Stick to the top */
-  left: 0; /* Stick to the left */
+  left: 0; /* Stick to the left */ 
   overflow-y: auto; /* Add scroll if content overflows */
 }
 

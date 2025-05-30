@@ -14,7 +14,7 @@ const OrganiserLogin = () => {
     setError("");
 
     try {
-      const response = await fetch("http://localhost:5002/api/hoster/login", {
+      const response = await fetch("https://hacktrack-rggs.onrender.com/api/hoster/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),

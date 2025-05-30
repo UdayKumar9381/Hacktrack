@@ -21,7 +21,7 @@ const Navbar = () => {
           return;
         }
     
-        const response = await axios.get('http://localhost:5002/api/college/details', {
+        const response = await axios.get('https://hacktrack-rggs.onrender.com/api/college/details', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setCollegeDetails(response.data);

@@ -17,7 +17,7 @@ const CertificateMaker = () => {
     try {
       setLoading(true);
       const certificateUrl = "generated-certificate-url"; // Replace with actual URL
-      const response = await axios.post("http://localhost:5002/api/certificates/create", {
+      const response = await axios.post("https://hacktrack-rggs.onrender.com/api/certificates/create", {
         studentId,
         studentName,
         course,

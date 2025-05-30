@@ -11,7 +11,7 @@
   .job-listings {
     display: flex;
     flex-direction: column;
-  } 
+  }  
   
   .job-card {
     background-color: #fff;

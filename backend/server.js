@@ -145,7 +145,7 @@ app.listen(PORT, () => {
 // const CollegeSignupLoginRoutes = require('./routes/CollegeSignupLoginRoutes');
 
 // const app = express();
-// app.use(cors());
+// app.use(cors()); 
 
 // const uploadPath = 'uploads/profile-pictures';
 // if (!fs.existsSync(uploadPath)) {

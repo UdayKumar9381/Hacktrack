@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const UploadSchema = new mongoose.Schema({
+const UploadSchema = new mongoose.Schema({ 
     userId: { 
         type: String, 
         required: true 

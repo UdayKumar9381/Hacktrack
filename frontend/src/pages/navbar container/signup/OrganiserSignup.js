@@ -30,7 +30,7 @@ const OrganiserSignup = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5002/api/hoster/signup", {  // Change "organiser" to "hoster"
+      const response = await fetch("https://hacktrack-rggs.onrender.com/api/hoster/signup", {  // Change "organiser" to "hoster"
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

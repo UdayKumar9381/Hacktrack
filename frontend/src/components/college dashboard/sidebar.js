@@ -6,7 +6,7 @@ const Sidebar = () => {
   const [showHackathonOptions, setShowHackathonOptions] = useState(false);
 
   const toggleHackathonOptions = (e) => {
-    e.preventDefault(); // Prevent default anchor behavior
+    e.preventDefault(); // Prevent default anchor behavior 
     setShowHackathonOptions(!showHackathonOptions);
   };
 

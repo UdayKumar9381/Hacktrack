@@ -16,7 +16,7 @@ function PromoteHackathon() {
       <h2>Promote Your Hackathon</h2>
       <div className="promote-container">
         <div className="promote-wrapper">
-          {promoteData.concat(promoteData).map((item, index) => ( // Duplicate items for seamless loop
+          {promoteData.concat(promoteData).map((item, index) => ( // Dupl icate items for seamless loop
             <div className="promote-item" key={index}>
               <h3>{item.title}</h3>
               <p>{item.description}</p>

@@ -10,7 +10,7 @@
   width: 100%;
   max-width: 1400px;
   background: linear-gradient(135deg, #f3f9fb, #e6f4f1, #f0f7f9); /* Soft gradient */
-  border-radius: 20px; /* Rounded corners */
+  border-radius: 20px; /* Rounded corners */ 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 

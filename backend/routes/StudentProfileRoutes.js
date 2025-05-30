@@ -3,7 +3,7 @@ const StudentProfile = require("../models/StudentProfile");
 
 const router = express.Router();
 
-// 📌 1. Create or Update Profile (if email exists, update it)
+// 📌 1. Create or Update Profile (if email exists, update it) 
 router.post("/update", async (req, res) => {
     try {
         const { email, ...profileData } = req.body;

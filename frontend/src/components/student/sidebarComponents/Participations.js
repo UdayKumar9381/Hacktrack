@@ -17,7 +17,7 @@ const Participation = () => {
         }
     
         try {
-            const response = await fetch(`http://localhost:5002/api/participation/${email}`);
+            const response = await fetch(`https://hacktrack-rggs.onrender.com/api/participation/${email}`);
             const data = await response.json();
     
             if (data.status === "Success") {

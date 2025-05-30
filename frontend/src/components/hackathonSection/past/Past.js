@@ -4,7 +4,7 @@ import axios from 'axios';
 import './Past.css';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-const API_URL = 'http://localhost:5002/hackathon';
+const API_URL = 'https://hacktrack-rggs.onrender.com/hackathon';
 
 function HackathonCard({ title, description, image, startDate, endDate, location, collegeName }) {
   return (
@@ -54,7 +54,7 @@ function HackathonList({ title, events }) {
                 key={index}
                 title={event.name}
                 description={event.description}
-                image={event.image ? `http://localhost:5002/${event.image}` : 'pastposter.jpg'}
+                image={event.image ? `https://hacktrack-rggs.onrender.com/${event.image}` : 'pastposter.jpg'}
                 startDate={event.startDate}
                 endDate={event.endDate}
                 location={event.location}

@@ -6,7 +6,7 @@ const College = require('../models/College');
 
 const router = express.Router();
 
-// Signup Route
+// Signup Route 
 router.post('/signup', async (req, res) => {
   const { collegeName, collegeEmail, phoneNumber, collegeCode, password, confirmPassword } = req.body;
 

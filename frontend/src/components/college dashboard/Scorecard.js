@@ -11,7 +11,7 @@ const Scorecard = ({ setRegistrationsCount }) => {
   useEffect(() => {
     const fetchStudents = async () => {
       try {
-        const response = await fetch('http://localhost:5002/api/registration/registrations');
+        const response = await fetch('https://hacktrack-rggs.onrender.com/api/registration/registrations');
         if (!response.ok) {
           throw new Error('Failed to fetch students');
         }
@@ -57,7 +57,7 @@ const Scorecard = ({ setRegistrationsCount }) => {
     console.log("Student Data:", student);
 
     try {
-      const response = await fetch('http://localhost:5002/api/registration/update-score', {
+      const response = await fetch('https://hacktrack-rggs.onrender.com/api/registration/update-score', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ studentId, score: Number(scores[studentId]) }),

@@ -5,7 +5,7 @@ const CollegeHackathonHosting = require('../models//CollegeHackathonHosting');
 
 const router = express.Router();
 
-// Multer for image uploads (store in 'uploads/' directory)
+// Multer for image uploads (store in 'uploads/' directory) 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => cb(null, 'uploads/'),
     filename: (req, file, cb) => cb(null, Date.now() + '-' + file.originalname)

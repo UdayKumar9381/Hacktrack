@@ -15,7 +15,7 @@
   line-height: 60px; /* Match height */
 }
 
-/* Remove any default margins that might be causing gaps */
+/* Remove any default margins that might be causing gaps */ 
 body, html {
   margin: 0;
   padding: 0;

@@ -102,7 +102,7 @@ function Header() {
           <div className="mobile-menu-item" onClick={() => handleNavigation('/Login')}>Login</div>
         </div>
       )}
-    </div>
+    </div> 
   );
 }
 

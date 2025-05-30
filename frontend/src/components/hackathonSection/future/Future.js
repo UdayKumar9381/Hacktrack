@@ -3,7 +3,7 @@ import axios from 'axios';
 import HackathonCard from '../../../components/hackathonSection/HackathonCard';
 import './Future.css';
 
-const API_URL = 'http://localhost:5002/hackathon/status/future';
+const API_URL = 'https://hacktrack-rggs.onrender.com/hackathon/status/future';
 
 function Future() {
   const [futureHackathons, setFutureHackathons] = useState([]);
@@ -31,7 +31,7 @@ function Future() {
               key={hackathon._id}
               title={hackathon.name}
               description={hackathon.description}
-              image={hackathon.image ? `http://localhost:5002/${hackathon.image}` : '/default-placeholder.png'}
+              image={hackathon.image ? `https://hacktrack-rggs.onrender.com/${hackathon.image}` : '/default-placeholder.png'}
               startDate={hackathon.startDate}
               location={hackathon.location}
               collegeName={hackathon.collegeName}
